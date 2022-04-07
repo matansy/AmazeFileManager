@@ -34,7 +34,7 @@ class QuickAccessesPrefsFragment : BasePrefsFragment() {
         val KEYS = arrayOf(
             "fastaccess", "recent", "image", "video", "audio", "documents", "apks"
         )
-        val DEFAULT = arrayOf(true, true, true, true, true, true, true)
+        val DEFAULT = arrayOf(true, true, false, false, false, false, false)
 
         val prefPos: Map<String, Int> = KEYS.withIndex().associate {
             Pair(it.value, it.index)
